@@ -1,0 +1,36 @@
+# Input Layer
+# Hidden Layer 1
+# Hidden Layer 2
+# Output Layer
+
+# Every Neuron is connected to every neuron on the next level, this creates a unique weight.
+
+# import sys
+# # import numpy as np
+# import matplotlib
+#
+# print("Python:", sys.version)
+# print("Numpy:", np.__version__)
+# print("Matplotlib: ", matplotlib.__version__)
+
+inputs = [1, 2, 3, 2.5]  #Shape: (4,)
+
+weights = [[0.2, 0.8, -0.5, 1],
+           [0.5, -0.91, 0.26, -0.5],
+           [-0.26, -0.27, 0.17, 0.87]]
+
+biases = [2, 3, 0.5]
+
+
+"""
+# each neuron has its own unique weight set, and bias
+layer_outputs = []  #Output of current layer
+for neuron_weights, neuron_bias in zip(weights, biases):
+    neuron_output = 0  # Output of given neuron
+    for n_input, weight in zip(inputs, neuron_weights):
+        neuron_output += n_input*weight
+    neuron_output += neuron_bias
+    layer_outputs.append(neuron_output)
+
+print(layer_outputs)
+"""
