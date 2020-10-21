@@ -1,0 +1,21 @@
+result = True
+another_result = result
+print(id(result))
+print(id(another_result))
+
+# id function return identity of object
+# id for an object may be different each time
+# the program is ran
+# id of True is shown here not 'result'
+
+result = False
+print(id(result))
+
+result = "Correct"
+another_result = result
+print(id(result))
+print(id(another_result))
+
+result += "ish"
+print(id(result))
+print(id(another_result))
