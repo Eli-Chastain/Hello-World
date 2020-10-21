@@ -1,0 +1,14 @@
+options_list = "Please choose your option from the list below:\n" \
+               "1.\tLearn Python\n2.\tLearn Java\n3.\tGo swimming\n4.\t" \
+               "Have dinner\n5.\tGo to bed\n0.  Exit"
+print(options_list)
+chosen_option = int(input())
+while chosen_option != 0:
+    if chosen_option > 5:
+        print(options_list)
+        chosen_option = int(input())
+    else:
+        print("Okay you chose {}".format(chosen_option))
+        break
+else:
+    print("Now Quitting")
